@@ -16,6 +16,23 @@ class Column extends React.Component {
   static defaultProps = {
     icon: settings.defaultColumnIcon,
   }
+
+  // addColumn(title){
+  //   this.setState(state => (
+  //     {
+  //       columns: [
+  //         ...state.columns,
+  //         {
+  //           key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
+  //           title,
+  //           icon: 'list-alt',
+  //           cards: []
+  //         }
+  //       ]
+  //     }
+  //   ));
+  // }
+  
   render() {
     const {title, icon, cards, addCard} = this.props;
     return (
@@ -35,5 +52,9 @@ class Column extends React.Component {
     );
   }
 }
+
+Column.propTypes = {
+  title: PropTypes.node.isRequired,
+};
 
 export default Column;

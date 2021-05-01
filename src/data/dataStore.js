@@ -16,8 +16,8 @@ export const pageContents = {
 };
 
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
+  title: 'To do list in <sup>2021!</sup>',
+  description: 'Only intersting things!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
     {
@@ -27,11 +27,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'This Is Going to Hurt',
+          title: 'Lord of the Rings',
         },
         {
           key: 1,
-          title: 'Interpreter of Maladies',
+          title: 'The E-Myth Revisited',
         },
       ],
     },
@@ -42,11 +42,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'Harry Potter',
+          title: 'Tp Gun 2',
         },
         {
           key: 1,
-          title: 'Star Wars',
+          title: 'James Bond',
         },
       ],
     },
@@ -61,7 +61,7 @@ export const listData = {
         },
         {
           key: 1,
-          title: 'Skyrim',
+          title: 'Stronghold',
         },
       ],
     },

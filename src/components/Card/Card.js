@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
-import Creator from '../Creator/Creator.js';
+//import Creator from '../Creator/Creator.js';
 
 class Card extends React.Component {
     static propTypes = {

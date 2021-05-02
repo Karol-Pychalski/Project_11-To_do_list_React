@@ -4,7 +4,7 @@ import Hero from '../Hero/Hero.js';
 import PropTypes from 'prop-types';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
-//import Creator from '../Creator/Creator.js';
+import Creator from '../Creator/Creator.js';
 import Column from '../Column/ColumnContainer.js';
 
 class List extends React.Component {
@@ -14,6 +14,7 @@ class List extends React.Component {
         image: PropTypes.node,
         description: PropTypes.node,
         columns: PropTypes.array,
+        addColumn: PropTypes.func,
     }
     static defaultProps = {
         description: settings.defaultListDescription,
@@ -21,7 +22,7 @@ class List extends React.Component {
 
 
     render() {
-        const {title, image, description, columns} = this.props;
+        const {title, image, description, columns, addColumn} = this.props;
         return (
         <section className={styles.component}>       
             <Hero  titleText={title} image={image} />
@@ -35,11 +36,9 @@ class List extends React.Component {
                 ))}
             </div>
 
-            {/*
             <div className={styles.creator}>
-                <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
+                <Creator text={settings.columnCreatorText} action={addColumn}/>   {/*props addColumn to dispatcher akcji z columnsRedux.js (12.4) */}
             </div>
-            */}
 
             <Hero image={this.props.image} />
         </section>
@@ -48,4 +47,3 @@ class List extends React.Component {
 }
 
 export default List;
-/*<div className={}> */

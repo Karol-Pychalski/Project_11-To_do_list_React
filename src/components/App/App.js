@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import PropTypes from 'prop-types';
 import List from '../List/ListContainer.js';
+import Search from '../Search/SearchContainer.js';
 //import {pageContents, listData} from '../../data/dataStore';    usunięte w 12.3
 
 
@@ -10,7 +11,8 @@ class App extends React.Component {
     title: PropTypes.node,
     subtitle: PropTypes.node,
     lists: PropTypes.array,
-  }  
+  }
+
   render() {
     const {title, subtitle, lists} = this.props;
     return (
@@ -20,6 +22,7 @@ class App extends React.Component {
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
         ))}
+        <Search />
       </main>
     );
   }

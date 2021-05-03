@@ -10,6 +10,9 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  header: {
+    icon: 'anchor',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -19,8 +22,20 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
+export const FAQContents = {
+  title: 'FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  description: 'Frequently Asked Questions',
+};
+
+export const infoContents = {
+  title: 'Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  description: 'Information about page',
+};
+
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
+  title: 'Things to do this<sup>year!</sup>',
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
@@ -46,11 +61,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'Harry Potter',
+          title: 'Top Gun 2',
         },
         {
           key: 1,
-          title: 'Star Wars',
+          title: 'James Bond',
         },
       ],
     },
@@ -65,7 +80,7 @@ export const listData = {
         },
         {
           key: 1,
-          title: 'Skyrim',
+          title: 'Stronghold',
         },
       ],
     },
@@ -75,7 +90,7 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
+    title: 'Things to do this<sup>year!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
@@ -122,12 +137,12 @@ const cards = [
   {
     id: 'card-3',
     columnId: 'column-2',
-    title: 'Harry Potter',
+    title: 'Top Gun 2',
   },
   {
     id: 'card-4',
     columnId: 'column-2',
-    title: 'Star Wars',
+    title: 'James Bond',
   },
   {
     id: 'card-5',
@@ -137,7 +152,7 @@ const cards = [
   {
     id: 'card-6',
     columnId: 'column-3',
-    title: 'Skyrim',
+    title: 'Stronghold',
   },
 ];
 
